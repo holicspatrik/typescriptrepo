@@ -73,13 +73,13 @@ var a1 = {
     gyarto: "Audi",
     tipus: "A4",
     hengerurtartalom: 1890,
-    benzinese: false,
+    benzinese: true,
 };
 var a2 = {
     gyarto: "Opel",
     tipus: "Astra",
     hengerurtartalom: 1600,
-    benzinese: true
+    benzinese: true,
 };
 var a3 = {
     gyarto: "Volkswagen",
@@ -91,7 +91,7 @@ var a4 = {
     gyarto: "BMW",
     tipus: "i3",
     hengerurtartalom: 0,
-    benzinese: false,
+    benzinese: true,
 };
 var autok = [a1, a2, a3, a4];
 console.log(minauto(autok));

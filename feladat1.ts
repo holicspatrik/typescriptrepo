@@ -170,7 +170,7 @@ var a1:Auto = {
     gyarto: "Audi",
     tipus: "A4",
     hengerurtartalom: 1890,
-    benzinese: false,
+    benzinese: true,
 
 }
 
@@ -178,7 +178,7 @@ var a2:Auto = {
     gyarto: "Opel",
     tipus: "Astra",
     hengerurtartalom: 1600,
-    benzinese: true
+    benzinese: true,
 
 
 }
@@ -197,7 +197,7 @@ var a4:Auto = {
     gyarto:"BMW",
     tipus: "i3",
     hengerurtartalom: 0,
-    benzinese: false,
+    benzinese: true,
 
     
 }
