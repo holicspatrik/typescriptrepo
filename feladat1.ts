@@ -119,7 +119,7 @@ function vanebenzines(autok:Auto[]):boolean{
 
     var i:number = 0;
 
-    while(i < autok.length && !(autok[i].benzinese == true)){
+    while(i < autok.length && !(autok[i].benzinese == false)){
 
         i++
     }

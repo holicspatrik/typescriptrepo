@@ -46,7 +46,7 @@ function atlagccm(autok) {
 }
 function vanebenzines(autok) {
     var i = 0;
-    while (i < autok.length && !(autok[i].benzinese == true)) {
+    while (i < autok.length && !(autok[i].benzinese == false)) {
         i++;
     }
     if (i < autok.length) {
