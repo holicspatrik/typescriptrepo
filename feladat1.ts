@@ -96,6 +96,75 @@ function benzinesdb(autok:Auto[]):number{
 }
 
 
+
+function atlagccm(autok:Auto[]):number{
+
+    var atlag:number = 0;
+
+
+    for(var i:number = 0; i < autok.length; i++){
+
+        atlag+= autok[i].hengerurtartalom
+    }
+
+    atlag/= autok.length;
+
+    return atlag;
+}
+
+
+
+
+function vanebenzines(autok:Auto[]):boolean{
+
+    var i:number = 0;
+
+    while(i < autok.length && !(autok[i].benzinese == true)){
+
+        i++
+    }
+
+    if(i < autok.length){
+
+        return true
+    }
+
+    else{
+
+        return false 
+    }
+}
+
+
+function szetvalogato(autok:Auto[]):[Auto[], Auto[]]{
+
+    var benzinesek:Auto[] = [];
+    var nembenzinesek:Auto[] = [];
+
+    for(var i:number = 0; i < autok.length; i++){
+
+        if(autok[i].benzinese == true){
+
+            benzinesek.push(autok[i]);
+        }
+
+        else{
+
+            nembenzinesek.push(autok[i]);
+        }
+    }
+
+    
+
+
+    return [benzinesek, nembenzinesek]
+}
+
+
+
+
+
+
 var a1:Auto = {
 
     gyarto: "Audi",
@@ -140,3 +209,9 @@ var autok:Auto[] = [a1, a2, a3, a4];
 console.log(minauto(autok));
 
 console.log(benzinesdb(autok));
+
+console.log(atlagccm(autok));
+
+console.log(vanebenzines(autok));
+
+console.log(szetvalogato(autok));
